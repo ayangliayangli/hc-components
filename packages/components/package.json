@@ -1,0 +1,24 @@
+{
+  "name": "@amydad/hc-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "module":"es/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:component": "vite build",
+    "build:style": "esno build/buildLess.ts",
+    "build": "pnpm run build:component && pnpm run build:style"
+  },
+  "files": [
+    "es",
+    "lib"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@amydad/hc-utils": "workspace:^1.0.0"
+  }
+}
